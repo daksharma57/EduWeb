@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo img{
+    width: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.navbar{
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    display: flex;
+    
+}
+ .nav-list{
+    width: 70%;
+    display: flex;
+    /* background-color: black; */
+    align-items: center; 
+    
+ }
+.nav-list li{
+    list-style: none;
+    padding: 15px 16px;
+    margin: 0px 30px;
+    
+ }
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family:'Ubuntu', sans-serif ;
+ }
+ .rightNav{
+     margin: 4px;
+     width: 30%;
+     text-align: right;
+     /* background-color: rgb(77, 17, 17); */
+    
+ }
+
+ #search{
+     padding: 4px;
+     font-size: 12px;
+     border: 2px solid rgb(10, 7, 7);
+     border-radius: 8px;
+     outline: none;
+ }
+
+ .background{
+     background: rgba(0, 0, 0, 0.7) url('../Images/backg.jpg');
+     background-size: cover;
+     background-blend-mode: darken;
+ }
+ .firstsection{
+     height: 120vh;
+ }
+ .box-main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     max-width: 50%;
+     margin: auto;
+     height: 80%;
+ }
+ .firstHalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+ }
+ .secondHalf{
+    width: 30%;
+ }
+ .secondHalf img{
+     width: 100px;
+     padding: 40px 20px;
+     display: block;
+     margin: auto;
+ }
+ .text-big{
+     font-size: 2.5rem;
+ }
+ .text-small{
+    font-size: 1rem;
+ }
+
+ .btn{
+     padding: 4px 9px;
+     margin: 12px 12px;
+     border: 2px solid white;
+     color: white;
+     border-radius: 6px;
+     background: none;
+     font-size: 12px;
+     cursor: pointer;
+ }
+ .btn-sm{
+     vertical-align: middle;
+ }
+ .btn-dark{
+     color: black;
+     border: 2px solid black;
+     border-radius: 4px;
+ }
+ .section{
+     display: flex;
+     /* height: 300px; */
+     align-items: center;
+     justify-content: space-evenly;
+     max-width: 80%;
+     margin: 0px auto;
+     font-family: 'Ubuntu', sans-serif;
+     padding: 10px;
+ }
+ .sec-Left{
+     flex-direction: row-reverse;
+    
+ }
+ .sectionTag{
+    padding: 3px 0px;
+ }
+ .paras{
+     padding: 0px 66px;
+ }
+
+ .imgFluid{
+    width: 180px;
+    border: 2px solid black;
+    border-radius: 14px;
+    margin-top: 18px;
+ }
+ .sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .contact{
+     background-color:rgb(252, 242, 225) ;
+     height: 75vh;
+     margin: auto;
+ }
+ .text-center{
+     text-align: center;
+     padding: 24px;
+     font-family:'Ubuntu', sans-serif ;
+ }
+ .form{
+     max-width: 60%x;
+     margin: 0px 230px;
+ }
+ .form-input{
+     font-size: 16px;
+     width: 100%;
+     border: 2px solid black;
+     border-radius: 6px;
+     margin-top: 20px;
+     padding: 4px 7px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ .text-footer{
+    text-align: center;
+    padding: 17px 0px;
+    font-family:'Ubuntu', sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+ }
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+ @media only screen and (max-width: 1300px){
+     .nav-list{
+         flex-direction: column;
+     }
+     .navbar{
+        height: 500px;
+         flex-direction: column;
+         transition: all 0.7s ease-out;
+     }
+     .rightNav{
+         text-align: center;
+     }
+     #search{
+         width: 100%;
+     }
+     .burger{
+         display: block;
+     }
+     .h-nav-resp{
+         height: 72px;
+     }
+     .v-class-resp{
+         opacity: 0;
+     }
+     .box-main{
+         flex-direction: column-reverse;
+         max-width: 100%;
+     }
+     .section{
+         flex-direction: column-reverse;
+     }
+     .text-big , .text-small , .btn{
+         text-align: center;
+     }
+     .button{
+         text-align: center;
+     }
+     .paras{
+         padding: 0px 1px;
+     }
+ }
